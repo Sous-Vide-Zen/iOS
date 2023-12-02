@@ -11,7 +11,7 @@ final class CreateUserViewController: UIViewController {
     
     //MARK: - UI Elements
     
-    let user = User(username: "Ivan4", email: "ivan4@ivan.ru", password: "VeryLongPassword123.")
+    let user = User(username: "Ivan2", email: "ivan2@ivan.ru", password: "VeryLongPassword123.")
     
     let networkService = NetworkService()
     

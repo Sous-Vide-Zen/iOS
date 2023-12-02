@@ -15,6 +15,8 @@
 		E29AE9512B1B0D8000658868 /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29AE9502B1B0D8000658868 /* CreateUserViewController.swift */; };
 		E29AE9552B1B0FE500658868 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29AE9542B1B0FE500658868 /* User.swift */; };
 		E29AE9572B1B103900658868 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29AE9562B1B103900658868 /* NetworkService.swift */; };
+		E29AE95A2B1B5C1C00658868 /* URLRequest + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29AE9592B1B5C1C00658868 /* URLRequest + Ext.swift */; };
+		E29AE95C2B1B5CC300658868 /* AuthConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29AE95B2B1B5CC300658868 /* AuthConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		E29AE9502B1B0D8000658868 /* CreateUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
 		E29AE9542B1B0FE500658868 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E29AE9562B1B103900658868 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		E29AE9592B1B5C1C00658868 /* URLRequest + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest + Ext.swift"; sourceTree = "<group>"; };
+		E29AE95B2B1B5CC300658868 /* AuthConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthConfiguration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 		E221FFE82B15A571002A5268 /* Sous-Vide-Zen */ = {
 			isa = PBXGroup;
 			children = (
+				E29AE9582B1B5C0400658868 /* Helpers */,
 				E29AE94C2B1B0D3400658868 /* Main */,
 				E29AE94D2B1B0D4700658868 /* CreateUser */,
 				E29AE9522B1B0E1C00658868 /* Netwrok Client */,
@@ -109,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				E29AE9562B1B103900658868 /* NetworkService.swift */,
+				E29AE95B2B1B5CC300658868 /* AuthConfiguration.swift */,
 			);
 			path = "Netwrok Client";
 			sourceTree = "<group>";
@@ -119,6 +125,14 @@
 				E29AE9542B1B0FE500658868 /* User.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E29AE9582B1B5C0400658868 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E29AE9592B1B5C1C00658868 /* URLRequest + Ext.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +209,8 @@
 				E221FFEA2B15A571002A5268 /* AppDelegate.swift in Sources */,
 				E221FFEC2B15A571002A5268 /* SceneDelegate.swift in Sources */,
 				E29AE9572B1B103900658868 /* NetworkService.swift in Sources */,
+				E29AE95C2B1B5CC300658868 /* AuthConfiguration.swift in Sources */,
+				E29AE95A2B1B5C1C00658868 /* URLRequest + Ext.swift in Sources */,
 				E29AE9512B1B0D8000658868 /* CreateUserViewController.swift in Sources */,
 				E29AE9552B1B0FE500658868 /* User.swift in Sources */,
 			);

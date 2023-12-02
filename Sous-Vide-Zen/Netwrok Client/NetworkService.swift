@@ -6,7 +6,8 @@
 //
 
 fileprivate struct Endpoints {
-    let createUser = "http://127.0.0.1:8000/api/v1/auth/users/"
+    let createUser = "/api/v1/auth/users/"
+    let createToken = "http://127.0.0.1:8000/api/v1/auth/jwt/create"
 }
 
 import Foundation
@@ -14,11 +15,8 @@ import Foundation
 final class NetworkService {
     
     func createUser(user: User, completion: @escaping (Result<UserResponse, Error>) -> Void) {
-        guard let url = URL(string: Endpoints().createUser) else { return }
-        var request = URLRequest(url: url)
-        request.httpMethod = "POST"
+        var request = URLRequest.makeHTTPRequest(path: Endpoints().createUser, httpMethod: "POST")
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        
         do {
             request.httpBody = try JSONEncoder().encode(user)
         } catch {
@@ -33,7 +31,6 @@ final class NetworkService {
                 print(error.localizedDescription)
                 return
             }
-            
             
             guard let data else { return }
             

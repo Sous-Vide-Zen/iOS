@@ -24,6 +24,11 @@
 		E2A6AA502B7A408D003ED6E0 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6AA4F2B7A408D003ED6E0 /* Coordinator.swift */; };
 		E2A6AA522B7A4491003ED6E0 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6AA512B7A4491003ED6E0 /* AppCoordinator.swift */; };
 		E2A6AA542B7A458C003ED6E0 /* OnBoardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6AA532B7A458C003ED6E0 /* OnBoardingCoordinator.swift */; };
+		E2A6AA562B7A4AC5003ED6E0 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6AA552B7A4AC5003ED6E0 /* HomeCoordinator.swift */; };
+		E2A6AA582B7A4B01003ED6E0 /* NotificationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6AA572B7A4B01003ED6E0 /* NotificationCoordinator.swift */; };
+		E2A6AA5A2B7A4B2F003ED6E0 /* BookmarksCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6AA592B7A4B2F003ED6E0 /* BookmarksCoordinator.swift */; };
+		E2A6AA5C2B7A4B42003ED6E0 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6AA5B2B7A4B42003ED6E0 /* ProfileCoordinator.swift */; };
+		E2A6AA5E2B7A4B72003ED6E0 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6AA5D2B7A4B72003ED6E0 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +48,11 @@
 		E2A6AA4F2B7A408D003ED6E0 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		E2A6AA512B7A4491003ED6E0 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		E2A6AA532B7A458C003ED6E0 /* OnBoardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingCoordinator.swift; sourceTree = "<group>"; };
+		E2A6AA552B7A4AC5003ED6E0 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		E2A6AA572B7A4B01003ED6E0 /* NotificationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCoordinator.swift; sourceTree = "<group>"; };
+		E2A6AA592B7A4B2F003ED6E0 /* BookmarksCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksCoordinator.swift; sourceTree = "<group>"; };
+		E2A6AA5B2B7A4B42003ED6E0 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		E2A6AA5D2B7A4B72003ED6E0 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +184,10 @@
 				E2A6AA4F2B7A408D003ED6E0 /* Coordinator.swift */,
 				E2A6AA512B7A4491003ED6E0 /* AppCoordinator.swift */,
 				E2A6AA532B7A458C003ED6E0 /* OnBoardingCoordinator.swift */,
+				E2A6AA552B7A4AC5003ED6E0 /* HomeCoordinator.swift */,
+				E2A6AA572B7A4B01003ED6E0 /* NotificationCoordinator.swift */,
+				E2A6AA592B7A4B2F003ED6E0 /* BookmarksCoordinator.swift */,
+				E2A6AA5B2B7A4B42003ED6E0 /* ProfileCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -181,6 +195,7 @@
 		E2A6AA4E2B7A4080003ED6E0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E2A6AA5D2B7A4B72003ED6E0 /* TabBarController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -270,8 +285,13 @@
 				E2A6AA502B7A408D003ED6E0 /* Coordinator.swift in Sources */,
 				E221FFEC2B15A571002A5268 /* SceneDelegate.swift in Sources */,
 				E2A6AA542B7A458C003ED6E0 /* OnBoardingCoordinator.swift in Sources */,
+				E2A6AA5E2B7A4B72003ED6E0 /* TabBarController.swift in Sources */,
 				E29AE9572B1B103900658868 /* NetworkClient.swift in Sources */,
+				E2A6AA582B7A4B01003ED6E0 /* NotificationCoordinator.swift in Sources */,
+				E2A6AA5C2B7A4B42003ED6E0 /* ProfileCoordinator.swift in Sources */,
 				E29AE95C2B1B5CC300658868 /* AuthConfiguration.swift in Sources */,
+				E2A6AA562B7A4AC5003ED6E0 /* HomeCoordinator.swift in Sources */,
+				E2A6AA5A2B7A4B2F003ED6E0 /* BookmarksCoordinator.swift in Sources */,
 				E29AE95A2B1B5C1C00658868 /* URLRequest + Ext.swift in Sources */,
 				E29AE9512B1B0D8000658868 /* CreateUserViewController.swift in Sources */,
 				E29AE9552B1B0FE500658868 /* User.swift in Sources */,

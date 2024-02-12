@@ -14,9 +14,14 @@
 		E221FFF62B15A572002A5268 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E221FFF42B15A572002A5268 /* LaunchScreen.storyboard */; };
 		E29AE9512B1B0D8000658868 /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29AE9502B1B0D8000658868 /* CreateUserViewController.swift */; };
 		E29AE9552B1B0FE500658868 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29AE9542B1B0FE500658868 /* User.swift */; };
-		E29AE9572B1B103900658868 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29AE9562B1B103900658868 /* NetworkService.swift */; };
+		E29AE9572B1B103900658868 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29AE9562B1B103900658868 /* NetworkClient.swift */; };
 		E29AE95A2B1B5C1C00658868 /* URLRequest + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29AE9592B1B5C1C00658868 /* URLRequest + Ext.swift */; };
 		E29AE95C2B1B5CC300658868 /* AuthConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29AE95B2B1B5CC300658868 /* AuthConfiguration.swift */; };
+		E29AE95F2B1F6BC300658868 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = E29AE95E2B1F6BC300658868 /* SwiftKeychainWrapper */; };
+		E29AE9672B1F6C5B00658868 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E29AE9662B1F6C5B00658868 /* SnapKit */; };
+		E29AE9692B1F6C5B00658868 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = E29AE9682B1F6C5B00658868 /* SnapKit-Dynamic */; };
+		E29AE96C2B1F6D6100658868 /* URLSession + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29AE96B2B1F6D6100658868 /* URLSession + Ext.swift */; };
+		E2A6AA502B7A408D003ED6E0 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6AA4F2B7A408D003ED6E0 /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +34,11 @@
 		E221FFF72B15A572002A5268 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E29AE9502B1B0D8000658868 /* CreateUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
 		E29AE9542B1B0FE500658868 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		E29AE9562B1B103900658868 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		E29AE9562B1B103900658868 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		E29AE9592B1B5C1C00658868 /* URLRequest + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest + Ext.swift"; sourceTree = "<group>"; };
 		E29AE95B2B1B5CC300658868 /* AuthConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthConfiguration.swift; sourceTree = "<group>"; };
+		E29AE96B2B1F6D6100658868 /* URLSession + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession + Ext.swift"; sourceTree = "<group>"; };
+		E2A6AA4F2B7A408D003ED6E0 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +46,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E29AE95F2B1F6BC300658868 /* SwiftKeychainWrapper in Frameworks */,
+				E29AE9672B1F6C5B00658868 /* SnapKit in Frameworks */,
+				E29AE9692B1F6C5B00658868 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +74,7 @@
 		E221FFE82B15A571002A5268 /* Sous-Vide-Zen */ = {
 			isa = PBXGroup;
 			children = (
+				E2A6AA4C2B7A403C003ED6E0 /* NavigationLayer */,
 				E29AE9582B1B5C0400658868 /* Helpers */,
 				E29AE94C2B1B0D3400658868 /* Main */,
 				E29AE94D2B1B0D4700658868 /* CreateUser */,
@@ -113,7 +124,7 @@
 		E29AE9522B1B0E1C00658868 /* Netwrok Client */ = {
 			isa = PBXGroup;
 			children = (
-				E29AE9562B1B103900658868 /* NetworkService.swift */,
+				E29AE9562B1B103900658868 /* NetworkClient.swift */,
 				E29AE95B2B1B5CC300658868 /* AuthConfiguration.swift */,
 			);
 			path = "Netwrok Client";
@@ -130,9 +141,42 @@
 		E29AE9582B1B5C0400658868 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				E29AE9592B1B5C1C00658868 /* URLRequest + Ext.swift */,
+				E29AE96A2B1F6CEE00658868 /* Extensions */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E29AE96A2B1F6CEE00658868 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E29AE9592B1B5C1C00658868 /* URLRequest + Ext.swift */,
+				E29AE96B2B1F6D6100658868 /* URLSession + Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E2A6AA4C2B7A403C003ED6E0 /* NavigationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				E2A6AA4E2B7A4080003ED6E0 /* Controllers */,
+				E2A6AA4D2B7A4078003ED6E0 /* Coordinators */,
+			);
+			path = NavigationLayer;
+			sourceTree = "<group>";
+		};
+		E2A6AA4D2B7A4078003ED6E0 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				E2A6AA4F2B7A408D003ED6E0 /* Coordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		E2A6AA4E2B7A4080003ED6E0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +195,11 @@
 			dependencies = (
 			);
 			name = "Sous-Vide-Zen";
+			packageProductDependencies = (
+				E29AE95E2B1F6BC300658868 /* SwiftKeychainWrapper */,
+				E29AE9662B1F6C5B00658868 /* SnapKit */,
+				E29AE9682B1F6C5B00658868 /* SnapKit-Dynamic */,
+			);
 			productName = "Sous-Vide-Zen";
 			productReference = E221FFE62B15A571002A5268 /* Sous-Vide-Zen.app */;
 			productType = "com.apple.product-type.application";
@@ -179,6 +228,10 @@
 				Base,
 			);
 			mainGroup = E221FFDD2B15A571002A5268;
+			packageReferences = (
+				E29AE95D2B1F6BC300658868 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
+				E29AE9652B1F6C5B00658868 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = E221FFE72B15A571002A5268 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -207,12 +260,14 @@
 			files = (
 				E221FFEE2B15A571002A5268 /* ViewController.swift in Sources */,
 				E221FFEA2B15A571002A5268 /* AppDelegate.swift in Sources */,
+				E2A6AA502B7A408D003ED6E0 /* Coordinator.swift in Sources */,
 				E221FFEC2B15A571002A5268 /* SceneDelegate.swift in Sources */,
-				E29AE9572B1B103900658868 /* NetworkService.swift in Sources */,
+				E29AE9572B1B103900658868 /* NetworkClient.swift in Sources */,
 				E29AE95C2B1B5CC300658868 /* AuthConfiguration.swift in Sources */,
 				E29AE95A2B1B5C1C00658868 /* URLRequest + Ext.swift in Sources */,
 				E29AE9512B1B0D8000658868 /* CreateUserViewController.swift in Sources */,
 				E29AE9552B1B0FE500658868 /* User.swift in Sources */,
+				E29AE96C2B1F6D6100658868 /* URLSession + Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +480,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E29AE95D2B1F6BC300658868 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
+		E29AE9652B1F6C5B00658868 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E29AE95E2B1F6BC300658868 /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E29AE95D2B1F6BC300658868 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
+		};
+		E29AE9662B1F6C5B00658868 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E29AE9652B1F6C5B00658868 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		E29AE9682B1F6C5B00658868 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E29AE9652B1F6C5B00658868 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E221FFDE2B15A571002A5268 /* Project object */;
 }

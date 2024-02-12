@@ -3,4 +3,86 @@
    uuid = "10CE6110-2DEF-47F3-94FE-600AC187D19C"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "67085474-6B32-418D-AC47-974D420A5B7C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sous-Vide-Zen/Netwrok Client/NetworkClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "objectTask(for:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "67085474-6B32-418D-AC47-974D420A5B7C - 50bc81b2ba65f79"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Sous_Vide_Zen.NetworkClient.objectTask&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(for: Foundation.URLRequest, completion: (Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;) -&gt; ()) -&gt; __C.NSURLSessionTask"
+                  moduleName = "Sous-Vide-Zen"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aleksandrgaripov/Developer/Sous-Vide-Zen/Sous-Vide-Zen/Sous-Vide-Zen/Netwrok%20Client/NetworkClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "660">
+               </Location>
+               <Location
+                  uuid = "67085474-6B32-418D-AC47-974D420A5B7C - 50bc81b2ba65f79"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Sous_Vide_Zen.NetworkClient.objectTask&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(for: Foundation.URLRequest, completion: (Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;) -&gt; ()) -&gt; __C.NSURLSessionTask"
+                  moduleName = "Sous-Vide-Zen"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aleksandrgaripov/Developer/Sous-Vide-Zen/Sous-Vide-Zen/Sous-Vide-Zen/Netwrok%20Client/NetworkClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "872">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0A085EB8-31E4-423E-B2A5-640B77580DAC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sous-Vide-Zen/Netwrok Client/NetworkClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "objectTask(for:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F72B7500-C5CE-4D82-AC25-5EE945454F51"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sous-Vide-Zen/Netwrok Client/NetworkClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "objectTask(for:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class OnBoardingCoordinator: Coordinator {
+final class RegistrationCoordinator: Coordinator {
     override func start() {
         let vc = CreateUserViewController()
         navigationController?.pushViewController(vc, animated: true)

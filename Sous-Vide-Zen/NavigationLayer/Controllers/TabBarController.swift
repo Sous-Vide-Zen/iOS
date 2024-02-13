@@ -16,7 +16,6 @@ class TabBarController: UITabBarController {
         for tabBarController in tabBarControllers {
             self.addChild(tabBarController)
         }
-        
     }
     
     required init?(coder: NSCoder) {

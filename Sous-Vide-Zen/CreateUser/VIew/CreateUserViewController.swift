@@ -59,6 +59,7 @@ final class CreateUserViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .blue
        // view.backgroundColor = .blue
 //        createUser()
        // giveMeUsers()
